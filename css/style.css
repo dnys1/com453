@@ -73,3 +73,10 @@ code {
 	color: #000;
 	background-color: #f9db72;
 }
+
+.btn-xlg {
+	padding: 20px 32px;
+    font-size: 36px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+}

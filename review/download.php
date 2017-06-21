@@ -110,7 +110,7 @@
 			echo $err;
 			echo "</p>";
 			echo "<form action=\"certificates.php\">
-				 <button type=\"submit\" class=\"btn-lg btn-danger center-block\">Go Back</button>
+				 <button type=\"submit\" class=\"btn btn-lg btn-danger center-block\">Go Back</button>
 				 </form>";
 		}
 		else
@@ -134,14 +134,14 @@
 					/*  BEFORE USING */
 					/*****************/
 					echo "<form action=\"certificates/" . $row['FileName'] . "\">
-						 <button type=\"submit\" formtarget=\"_blank\" class=\"btn-lg btn-success center-block\">Download PDF</button>
+						 <button type=\"submit\" formtarget=\"_blank\" class=\"btn btn-lg btn-success center-block\">Download PDF</button>
 						 </form>";
 					break;
 				}
 			} else {
 				echo "<p class=\"lead text-center\">That name wasn't found in our database :-/<p>";
 				echo "<form action=\"certificates.php\">
-					 <button type=\"submit\" class=\"btn-lg btn-danger center-block\">Go Back</button>
+					 <button type=\"submit\" class=\"btn btn-lg btn-danger center-block\">Go Back</button>
 					 </form>";
 			}
 
