@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Completion certificates for training participants.">
-    <meta name="author" content="Dillon Nys">
+    <meta name="author" content="">
     <link rel="icon" href="../favicon.ico">
 
     <title>Certificates</title>
@@ -52,39 +52,23 @@
   <body>
     <!-- Begin page content -->
     <div class="container">
-      <div class="page-header">
-        <h1>Certificate of Completion</h1>
-      </div>
-	  <p class="lead">Congratulations on taking this bold step toward becoming a better communicator. Your peers and customers appreciate it! Click your name 
-	  below to download your completion certificate.</p>
-	  
-	  <!-- 2-column grid -->
-	  <div class="row">
-		<div class="col-xs-6">
-		  <p>
-		  <a href="#">Participant 1</a><br>
-		  <a href="#">Participant 2</a><br>
-		  <a href="#">Participant 3</a><br>
-		  <a href="#">Participant 4</a><br>
-		  <a href="#">Participant 5</a><br>
-		  <a href="#">Participant 6</a><br>
-		  <a href="#">Participant 7</a><br>
-		  <a href="#">Participant 8</a>
-		  </p>
+	<form method="get" action="download.php">
+		<div class="form-group">
+			<label for="fname">First Name* </label><span class="error"></span>
+			<input type="text" class="form-control" name="fname" placeholder="First Name" required>
 		</div>
-		<div class="col-xs-6">
-		<p>
-		  <a href="#">Participant 9</a><br>
-		  <a href="#">Participant 10</a><br>
-		  <a href="#">Participant 11</a><br>
-		  <a href="#">Participant 12</a><br>
-		  <a href="#">Participant 13</a><br>
-		  <a href="#">Participant 14</a><br>
-		  <a href="#">Participant 15</a>
-		</p>
+		<div class="form-group">
+			<label for="lname">Last Name* </label><span class="error"></span>
+			<input type="text" class="form-control" name="lname" placeholder="Last Name" required>
 		</div>
-	  </div>
-    </div>
+		<div class="form-group">
+			<label for="email">Email* </label><span class="error"></span>
+			<input type="email" class="form-control" name="email" placeholder="Email" required>
+		</div>
+		<button type="submit" class="btn-lg btn-success center-block">Submit</button>
+	</form>
+		
+	</div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
